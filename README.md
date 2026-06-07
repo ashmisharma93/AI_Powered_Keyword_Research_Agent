@@ -1,10 +1,10 @@
-# Keyword Research AI Agent 🔍
+# Keyword Research AI Agent 
 
 Automatically generate 40-50 high-quality long-tail keywords using multi-source API collection and LLM enrichment. Scores keywords by opportunity and clusters them intelligently. Production-ready with n8n automation.
 
 ---
 
-## 🎯 Problem & Solution
+## Problem & Solution
 
 ### Problem
 Content creators and SEO professionals spend **4+ hours researching keywords** for every article. Tools like Semrush cost **$300+/month**. Manual research is time-consuming, expensive, and incomplete.
@@ -21,7 +21,7 @@ This AI Agent automates keyword research by:
 
 ---
 
-## ✨ What It Does
+## What It Does
 
 **Input:** One seed keyword (e.g., "global internship")
 
@@ -47,7 +47,7 @@ Top Keywords by Opportunity Score:
 
 ---
 
-## 📊 Real Performance Metrics
+## Real Performance Metrics
 
 ### Data Collection Pipeline
 - **Google Suggestions:** ~12 keywords
@@ -77,7 +77,7 @@ Top Keywords by Opportunity Score:
 
 ---
 
-## 🧠 How It Works: 4-Step Pipeline
+## How It Works: 4-Step Pipeline
 
 ```
 STEP 1: Multi-Source Collection
@@ -103,7 +103,7 @@ STEP 4: Clustering & Output
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 | Component | Technology | Purpose |
 |-----------|-----------|---------|
@@ -117,27 +117,27 @@ STEP 4: Clustering & Output
 
 ---
 
-## 📥 Installation & Setup
+## Installation & Setup
 
-### 1️⃣ Clone Repository
+### 1️ Clone Repository
 ```bash
 git clone https://github.com/ashmisharma93/Keyword_Research_AI_Agent.git
 cd Keyword_Research_AI_Agent
 ```
 
-### 2️⃣ Create Virtual Environment
+### 2️ Create Virtual Environment
 ```bash
 python -m venv venv
 source venv/bin/activate          # Linux/Mac
 # OR: venv\Scripts\activate        # Windows
 ```
 
-### 3️⃣ Install Dependencies
+### 3️ Install Dependencies
 ```bash
 pip install -r requirements.txt
 ```
 
-### 4️⃣ Setup Environment Variables
+### 4️ Setup Environment Variables
 ```bash
 # Create .env file
 cp .env.example .env
@@ -148,7 +148,7 @@ cp .env.example .env
 
 **Get Gemini API key (Free):** https://ai.google.dev/
 
-### 5️⃣ Run the Agent
+### 5️ Run the Agent
 ```bash
 python scripts/main.py
 ```
@@ -161,7 +161,7 @@ python scripts/main.py
 
 ---
 
-## 📖 Code Structure
+## Code Structure
 
 ```
 scripts/
@@ -183,7 +183,7 @@ n8n/
 
 ---
 
-## 🎮 Interactive Mode (Hybrid)
+## Interactive Mode (Hybrid)
 
 Test with any keyword + optionally update Google Sheets!
 
@@ -193,26 +193,26 @@ python scripts/interactive_test.py
 
 Example:
 ```
-🔎 Enter a seed keyword: python web development
+ Enter a seed keyword: python web development
 
-🔄 Update Google Sheets? (y/n/h): y
+ Update Google Sheets? (y/n/h): y
 
-⏳ Processing...
+ Processing...
 
-✨ TOP KEYWORDS FOR: 'python web development'
+TOP KEYWORDS FOR: 'python web development'
 1. best python web framework      (Score: 90.5)
 2. python web development course  (Score: 89.2)
 ...
 
-✅ Results saved locally AND updated clustered_keywords.csv
+Results saved locally AND updated clustered_keywords.csv
 ```
 
 **Features:**
-- 🔍 Test unlimited keywords in one session
-- 🔄 Choose: Update Sheets? (y/n/h) for each keyword
-- 📊 View statistics, sources, and clusters
-- 💾 Auto-save with timestamp (never overwrites)
-- ⏱️ 10-15 seconds per keyword
+- Test unlimited keywords in one session
+- Choose: Update Sheets? (y/n/h) for each keyword
+- View statistics, sources, and clusters
+- Auto-save with timestamp (never overwrites)
+- 10-15 seconds per keyword
 
 **Usage:**
 - **(y)** YES - Update Google Sheets
@@ -221,7 +221,7 @@ Example:
 
 ---
 
-## 🚀 Real-World Applications
+## Real-World Applications
 
 ### 1. Content Marketing
 **Scenario:** Blogger writing 10 articles on "global internships"
@@ -249,18 +249,18 @@ Example:
 
 ---
 
-### 3. n8n Automation (Fully Working ✅)
+### 3. n8n Automation
 **Scenario:** Daily automated keyword research with email reports
 
 **Workflow includes:**
-- ✅ **Schedule Trigger** - Runs daily at 9 AM
-- ✅ **Wait** - 5-second delay for file I/O
-- ✅ **Read CSV** - Reads generated keywords
-- ✅ **Extract & Process** - Parses CSV data
-- ✅ **Clear Sheet** - Removes old data from Google Sheets
-- ✅ **Append Rows** - Adds 40-50 new keywords
-- ✅ **Limit Results** - Sends top 10 keywords
-- ✅ **Email Notification** - Daily report with link to sheet
+- **Schedule Trigger** - Runs daily at 9 AM
+- **Wait** - 5-second delay for file I/O
+- **Read CSV** - Reads generated keywords
+- **Extract & Process** - Parses CSV data
+- **Clear Sheet** - Removes old data from Google Sheets
+- **Append Rows** - Adds 40-50 new keywords
+- **Limit Results** - Sends top 10 keywords
+- **Email Notification** - Daily report with link to sheet
 
 **Automation Workflow:**
 ```
@@ -271,7 +271,7 @@ See `n8n/upload_keywords_to_sheets.n8n.json` for full workflow configuration.
 
 ---
 
-## 📧 n8n Automation Setup
+## n8n Automation Setup
 
 ### Quick Start with n8n.cloud (Recommended)
 
@@ -286,22 +286,25 @@ See `n8n/upload_keywords_to_sheets.n8n.json` for full workflow configuration.
 4. **Activate:**
    - Click "Activate" to enable scheduling
    - Workflow runs daily at 9 AM
-5. **Done!** ✅ You now have fully automated keyword research
+5. **Done!** You now have fully automated keyword research
 
 ### What You'll Receive
-- 📧 **Daily Email** with top 10 keywords and Google Sheet link
-- 📊 **Google Sheet** automatically updated with 40-50 keywords
-- ⏰ **Scheduled** to run every day at your preferred time
+- **Daily Email** with top 10 keywords and Google Sheet link
+- **Google Sheet** automatically updated with 40-50 keywords
+- **Scheduled** to run every day at your preferred time
 
 ---
 
-## 🎬 Live Demo & Screenshots
+## Live Demo & Screenshots
 
 ### Workflow Diagram
 Your n8n workflow with 9 nodes running successfully:
 ```
 Schedule Trigger → Wait → Read/Write Files → Extract CSV → 
 Clear Sheet → Append Rows → Limit Results → Send Email
+
+![n8n Workflow](screenshots/workflow_ss.png)
+
 ```
 
 ### Google Sheet Output
@@ -315,37 +318,37 @@ Clear Sheet → Append Rows → Limit Results → Send Email
 
 ### Email Notification
 Automated daily report showing:
-- "Your keyword clustering agent has completed today's run" ✅
+- "Your keyword clustering agent has completed today's run" 
 - Top 10 keywords by opportunity score
 - Direct link to Google Sheet
 - Sent via n8n automation
-
+![Email Output](screenshots/n8n_email_output.png)
 ---
 
-## ⚠️ Limitations & Honest Assessment
+## Limitations & Honest Assessment
 
-### What Works Well ✅
-- ✅ Fast keyword collection (10-15 seconds)
-- ✅ Diverse sources (Google, Bing, YouTube, Gemini)
-- ✅ Good semantic variations from Gemini
-- ✅ Intelligent scoring based on multi-factor algorithm
-- ✅ Reliable clustering organization
-- ✅ Completely automated n8n pipeline
-- ✅ Very low cost ($0.01-0.02/keyword)
-- ✅ Email notifications & Google Sheets integration
+### What Works Well 
+- Fast keyword collection (10-15 seconds)
+- Diverse sources (Google, Bing, YouTube, Gemini)
+- Good semantic variations from Gemini
+- Intelligent scoring based on multi-factor algorithm
+- Reliable clustering organization
+- Completely automated n8n pipeline
+- Very low cost ($0.01-0.02/keyword)
+- Email notifications & Google Sheets integration
 
-### Known Limitations ⚠️
+### Known Limitations 
 
 **1. Duplicate Keywords on Repeated Runs**
 - Currently: Workflow appends new keywords without removing old ones
 - Result: Running multiple times creates duplicates
 - Example: Run 1 = 50 keywords, Run 2 = 100 keywords (50 old + 50 new)
-- Status: ⚠️ Acknowledged but not critical for single daily runs
+- Status: Acknowledged but not critical for single daily runs
 
 **Solutions Explored:**
-- ❌ Deduplication logic - Would require database queries
-- ❌ Dynamic sheet creation - API rate limits hit with Google Sheets
-- ❌ Automatic clearing - Timing issues between n8n nodes
+- Deduplication logic - Would require database queries
+- Dynamic sheet creation - API rate limits hit with Google Sheets
+- Automatic clearing - Timing issues between n8n nodes
 
 **Production Solution:**
 For enterprise use, implement one of:
@@ -380,7 +383,7 @@ For enterprise use, implement one of:
 
 ---
 
-## 📚 References & Learning
+## References & Learning
 
 ### APIs Used
 - **Google Suggestions:** https://suggestqueries.google.com/
@@ -397,7 +400,7 @@ For enterprise use, implement one of:
 
 ---
 
-## 🎓 What I Learned Building This
+##  What I Learned Building This
 
 1. **API Integration** - Reliably calling multiple APIs with error handling
 2. **LLM Prompting** - Crafting prompts for consistent, high-quality output from Gemini
@@ -410,7 +413,7 @@ For enterprise use, implement one of:
 
 ---
 
-## 📧 Contact & Links
+## Contact & Links
 
 **Ashmita Sharma**
 
@@ -419,13 +422,13 @@ For enterprise use, implement one of:
 
 ---
 
-## 📝 License
+## License
 
 MIT License - Feel free to use for personal or commercial projects.
 
 ---
 
-## 🚀 Quick Start (2 Minutes)
+## Quick Start (2 Minutes)
 
 ```bash
 # 1. Clone
@@ -451,7 +454,7 @@ cat data/processed/clustered_keywords.csv
 
 ---
 
-## 💡 Pro Tips
+## Pro Tips
 
 - **Test with different seed keywords** - Results vary by niche
 - **Adjust Gemini n parameter** - Change `n=10` in main.py for more/fewer keywords
