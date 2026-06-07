@@ -304,9 +304,6 @@ Schedule Trigger → Wait → Read/Write Files → Extract CSV →
 Clear Sheet → Append Rows → Limit Results → Send Email
 
 ```
-![n8n Workflow](screenshots/workflow_ss.png)
-
-
 ### Google Sheet Output
 40-50 keywords with:
 - Column A: Keyword
@@ -323,8 +320,6 @@ Automated daily report showing:
 - Direct link to Google Sheet
 - Sent via n8n automation
 
-### Email Output
-![Email Output](screenshots/n8n_email_output.png)
 ---
 
 ## Limitations & Honest Assessment
