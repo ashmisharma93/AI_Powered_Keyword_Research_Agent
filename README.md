@@ -303,9 +303,9 @@ Your n8n workflow with 9 nodes running successfully:
 Schedule Trigger → Wait → Read/Write Files → Extract CSV → 
 Clear Sheet → Append Rows → Limit Results → Send Email
 
+```
 ![n8n Workflow](screenshots/workflow_ss.png)
 
-```
 
 ### Google Sheet Output
 40-50 keywords with:
@@ -322,6 +322,8 @@ Automated daily report showing:
 - Top 10 keywords by opportunity score
 - Direct link to Google Sheet
 - Sent via n8n automation
+
+### Email Output
 ![Email Output](screenshots/n8n_email_output.png)
 ---
 
